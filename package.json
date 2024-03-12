@@ -1,0 +1,28 @@
+{
+  "name": "slacksp",
+  "version": "1.0.0",
+  "description": "slack simple post app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfieyfc/slacksp.git"
+  },
+  "keywords": [
+    "slack"
+  ],
+  "author": "alfieyfc@gmail.com",
+  "license": "GNU v3",
+  "bugs": {
+    "url": "https://github.com/alfieyfc/slacksp/issues"
+  },
+  "homepage": "https://github.com/alfieyfc/slacksp#readme",
+  "dependencies": {
+    "@slack/web-api": "^7.0.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
