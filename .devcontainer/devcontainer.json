@@ -1,9 +1,16 @@
 {
   "name": "Basic Node.js",
   "build": { "dockerfile": "Dockerfile" },
-"remoteUser": "node",
-"features": {
-	"ghcr.io/devcontainers/features/git:1": {}
-},
-"postCreateCommand": "sudo npm install -g npm"
+  "remoteUser": "node",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  // Mount host ssh keys
+  "mounts": [
+    // MacOS
+    "type=bind,source=/Users/${localEnv:USER}/.ssh,target=/home/vscode/.ssh,readonly"
+    // Linux
+    // "type=bind,source=/Users/${localEnv:USER}/.ssh,target=/home/vscode/.ssh,readonly"
+  ],
+  "postCreateCommand": "sudo npm install -g npm"
 }
