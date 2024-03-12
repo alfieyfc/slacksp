@@ -8,9 +8,9 @@
   // Mount host ssh keys
   "mounts": [
     // MacOS
-    "type=bind,source=/Users/${localEnv:USER}/.ssh,target=/home/vscode/.ssh,readonly"
+    "type=bind,source=/Users/${localEnv:USER}/.ssh,target=/home/node/.ssh,readonly"
     // Linux
-    // "type=bind,source=/Users/${localEnv:USER}/.ssh,target=/home/vscode/.ssh,readonly"
+    // "type=bind,source=/Users/${localEnv:USER}/.ssh,target=/home/node/.ssh,readonly"
   ],
   "postCreateCommand": "sudo npm install -g npm"
 }
